@@ -1,0 +1,24 @@
+{
+  "mt5": {
+    "login": "seu_login_mt5",
+    "password": "sua_senha_mt5",
+    "server": "nome_do_servidor",
+    "path": "C:/Program Files/MetaTrader 5",
+    "account_type": "DEMO"  // ou "REAL" para conta real
+  },
+  "trading": {
+    "symbols": ["EURUSD", "GBPUSD", "USDJPY"],
+    "timeframes": ["M5", "M15", "H1"],
+    "risk_per_trade": 2.0,
+    "use_stop_loss": true,
+    "stop_loss_pips": 50,
+    "use_take_profit": true,
+    "take_profit_pips": 100,
+    "max_open_positions": 5
+  },
+  "model": {
+    "direction_model": "random_forest",
+    "pct_change_model": "lstm",
+    "prediction_threshold": 0.7
+  }
+}
